@@ -1,3 +1,4 @@
+"use client";
 import LoginButton from "@/components/LoginButton";
 import LoginInput from "@/components/LoginInput";
 import LoginRegTitle from "@/components/LoginRegTitle";
@@ -17,7 +18,7 @@ export default function Register() {
   const formStateRef = useRef(initialFormState);
   const [disabled, setDisabled] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
-  const route = useRouter();
+  // const route = useRouter();
 
   // const onSubmitHandler = async (e) => {
   //   e.preventDefault();
