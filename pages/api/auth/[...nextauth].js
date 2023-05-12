@@ -20,7 +20,7 @@ export const authOptions = {
       clientSecret: process.env.NAVER_CLIENT_SECRET,
     }),
   ],
-  secret: "qhdks811",
+  secret: "qwer1234",
   adapter: MongoDBAdapter(connectDB),
 };
 export default NextAuth(authOptions);

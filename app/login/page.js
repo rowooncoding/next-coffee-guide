@@ -1,3 +1,4 @@
+"use client";
 import GoogleLogin from "@/components/GoogleLogin";
 import KakaoLogin from "@/components/KakaoLogin";
 import LoginButton from "@/components/LoginButton";
@@ -5,7 +6,7 @@ import LoginInput from "@/components/LoginInput";
 import LoginRegTitle from "@/components/LoginRegTitle";
 import NaverLogin from "@/components/NaverLogin";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
   const router = useRouter();

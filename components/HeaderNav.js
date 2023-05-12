@@ -1,15 +1,13 @@
 "use client";
 import Link from "next/link";
 import LogOutButton from "./LogOutButton";
-import { useSession } from "next-auth/react";
 
-export default function HeaderNav() {
-  let session = useSession();
+export default function HeaderNav(props) {
   return (
     <ul className="flex gap-[34px] mt-[46px] mr-[30px] font-light text-[#675D50]">
-      {/* {session ? (
+      {props.session ? (
         <span>
-          {session.user.name} <LogOutButton />
+          {props.session.user.name} <LogOutButton />
         </span>
       ) : (
         <>
@@ -20,7 +18,7 @@ export default function HeaderNav() {
             <li>회원가입</li>
           </Link>
         </>
-      )} */}
+      )}
       <Link href="/">
         <li>내 계정</li>
       </Link>
