@@ -5,16 +5,8 @@ import LoginButton from "@/components/LoginButton";
 import LoginInput from "@/components/LoginInput";
 import LoginRegTitle from "@/components/LoginRegTitle";
 import NaverLogin from "@/components/NaverLogin";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
 
 export default function Login() {
-  const router = useRouter();
-  const { data: session } = useSession();
-
-  if (session) {
-    router.replace("/");
-  }
   return (
     <>
       <LoginRegTitle>로그인</LoginRegTitle>
