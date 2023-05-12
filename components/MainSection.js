@@ -1,5 +1,5 @@
-import Guide from "./Guide";
+import GuideTitle from "./GuideTitle";
 
 export default function MainSection() {
-  return <Guide />;
+  return <GuideTitle />;
 }

@@ -1,7 +1,7 @@
 import MainImages from "./MainImages";
 import SectionTitle from "./SectionTitle";
 
-export default function Guide() {
+export default function GuideTitle() {
   return (
     <div>
       <SectionTitle>브루잉 가이드 최신글</SectionTitle>
