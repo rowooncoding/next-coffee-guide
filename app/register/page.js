@@ -1,7 +1,7 @@
 "use client";
-import LoginButton from "@/components/LoginButton";
-import LoginInput from "@/components/LoginInput";
-import LoginRegTitle from "@/components/LoginRegTitle";
+import LoginButton from "@/app/components/LoginButton";
+import LoginInput from "@/app/components/LoginInput";
+import LoginRegTitle from "@/app/components/LoginRegTitle";
 // import { isEmail } from "@/util/isEmail";
 import { debounce } from "lodash";
 // import { useRouter } from "next/router";

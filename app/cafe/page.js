@@ -1,6 +1,6 @@
-import SectionTitle from "@/components/SectionTitle";
+import SectionTitle from "@/app/components/SectionTitle";
 import { connectDB } from "@/util/database";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default async function Cafe() {
   let db = (await connectDB).db("forum");
