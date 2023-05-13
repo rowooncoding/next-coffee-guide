@@ -1,5 +1,5 @@
 import Footer from "@/app/components/Footer";
-import MainSection from "@/app/components/MainSection";
+import MainSection from "@/app/mainsection/MainSection";
 
 export default function Home() {
   return (

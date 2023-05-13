@@ -1,10 +1,10 @@
 "use client";
-import GoogleLogin from "@/app/components/GoogleLogin";
-import KakaoLogin from "@/app/components/KakaoLogin";
+import GoogleLogin from "@/app/login/GoogleLogin";
+import KakaoLogin from "@/app/login/KakaoLogin";
 import LoginButton from "@/app/components/LoginButton";
 import LoginInput from "@/app/components/LoginInput";
 import LoginRegTitle from "@/app/components/LoginRegTitle";
-import NaverLogin from "@/app/components/NaverLogin";
+import NaverLogin from "@/app/login/NaverLogin";
 
 export default function Login() {
   return (

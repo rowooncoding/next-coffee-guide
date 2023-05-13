@@ -1,4 +1,4 @@
-import SectionTitle from "@/app/components/SectionTitle";
+import SectionTitle from "@/app/mainsection/SectionTitle";
 import { connectDB } from "@/util/database";
 // import Link from "next/link";
 
