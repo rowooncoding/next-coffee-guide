@@ -1,4 +1,4 @@
-export default async function Write() {
+export default function Write() {
   return (
     <div className="w-[828px] m-auto mt-[50px]">
       <h4 className="text-[25px] border-b-[1px] pb-[10px] text-[#081910]">
@@ -16,7 +16,7 @@ export default async function Write() {
           placeholder="내용을 작성해주세요"
         />
         <button
-          className="mt-[15px] flex sm:inline-flex justify-center items-center bg-teal-500 hover:bg-teal-600 active:bg-green-700 focus-visible:ring ring-green-300 text-white font-semibold text-center rounded-md outline-none transition duration-100 px-5 py-2"
+          className="mt-[15px] flex sm:inline-flex justify-center items-center bg-teal-500 hover:bg-teal-600 active:bg-teal-700 focus-visible:ring ring-teal-300 text-white font-semibold text-center rounded-md outline-none transition duration-100 px-5 py-2"
           type="submit"
         >
           작성완료
