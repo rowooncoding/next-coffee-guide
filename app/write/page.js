@@ -1,10 +1,10 @@
-export default function Write() {
+export default async function Write() {
   return (
     <div className="w-[828px] m-auto mt-[50px]">
       <h4 className="text-[25px] border-b-[1px] pb-[10px] text-[#081910]">
         카페추천
       </h4>
-      <form>
+      <form action="/api/post/new" method="POST">
         <input
           className="block px-[6px] py-[10px] mt-[20px] w-[828px] border-[1px] rounded-lg"
           name="title"
