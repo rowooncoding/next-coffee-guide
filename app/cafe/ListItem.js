@@ -23,7 +23,7 @@ export default function ListItem({ result }) {
               </button>
             </Link>
             <button
-              onClick={() => {
+              onClick={(e) => {
                 fetch("/api/post/delete", {
                   method: "POST",
                   body: list._id.toString(),
@@ -35,8 +35,10 @@ export default function ListItem({ result }) {
                       alert("에러!");
                     }
                   })
-                  .then((r) => {
-                    alert("게시글 삭제가 완료되었습니다.");
+                  .then(() => {
+                    setTimeout(() => {
+                      e.target.parentElement.style.display = "none";
+                    }, 100);
                   })
                   .catch((error) => {
                     alert("인터넷 환경을 확인해주세요");

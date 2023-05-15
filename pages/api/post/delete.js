@@ -7,6 +7,6 @@ export default async function handler(req, res) {
     let result = await db
       .collection("post")
       .deleteOne({ _id: new ObjectId(req.body) });
-    응답.status(200).json("삭제완료");
+    res.status(200).json("삭제완료");
   }
 }
