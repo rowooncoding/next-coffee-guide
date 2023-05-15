@@ -22,11 +22,31 @@ export default function ListItem({ result }) {
                 수정
               </button>
             </Link>
-            <Link href={"/cafe/cafeedit/" + list._id.toString()}>
-              <button className="absolute top-2 right-3" type="button">
-                삭제
-              </button>
-            </Link>
+            <button
+              onClick={() => {
+                fetch("/api/post/delete", {
+                  method: "POST",
+                  body: list._id.toString(),
+                })
+                  .then((r) => {
+                    if (r.status == 200) {
+                      return r.json();
+                    } else {
+                      alert("에러!");
+                    }
+                  })
+                  .then((r) => {
+                    alert("게시글 삭제가 완료되었습니다.");
+                  })
+                  .catch((error) => {
+                    alert("인터넷 환경을 확인해주세요");
+                  });
+              }}
+              className="absolute top-2 right-3"
+              type="button"
+            >
+              삭제
+            </button>
           </div>
         );
       })}
