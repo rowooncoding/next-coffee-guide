@@ -21,7 +21,7 @@ export default async function Cafe() {
         {result.map((list) => {
           return (
             <div
-              className="bg-[white] rounded-[10px] p-[20px] mb-[5px] shadow-[0_2px_4px_0px_rgb(224,224,224)]"
+              className="bg-[white] rounded-[10px] p-[20px] mb-[5px] shadow-[0_2px_4px_0px_rgb(224,224,224)] relative"
               key={list._id}
             >
               <Link href={"/cafedetail/" + list._id.toString()}>
@@ -30,6 +30,11 @@ export default async function Cafe() {
                 </h4>
               </Link>
               <p className="text-[gray] my-[5px] mx-[0]">1월 1일</p>
+              <Link href="/">
+                <button className="absolute top-2 right-3" type="button">
+                  수정
+                </button>
+              </Link>
             </div>
           );
         })}
