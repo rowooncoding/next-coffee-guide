@@ -49,6 +49,7 @@
 ![수정삭제](https://github.com/rowooncoding/next-coffee-guide/assets/114975279/0c378fdd-673a-4dda-bdc9-c6f093f769d5)
 
 - 로그인
+![로그인](https://github.com/rowooncoding/next-coffee-guide/assets/114975279/fb990c8f-d3e6-4b6c-ba55-0b09412ad6f4)
 현재 소셜로그인이 되지 않는 오류로 인하여 수정중입니다.
 
 - 회원가입
