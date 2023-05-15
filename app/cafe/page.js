@@ -30,8 +30,13 @@ export default async function Cafe() {
               </Link>
               <p className="text-[gray] my-[5px] mx-[0]">1월 1일</p>
               <Link href={"/cafe/cafeedit/" + list._id.toString()}>
-                <button className="absolute top-2 right-3" type="button">
+                <button className="absolute top-2 right-12" type="button">
                   수정
+                </button>
+              </Link>
+              <Link href={"/cafe/cafeedit/" + list._id.toString()}>
+                <button className="absolute top-2 right-3" type="button">
+                  삭제
                 </button>
               </Link>
             </div>
