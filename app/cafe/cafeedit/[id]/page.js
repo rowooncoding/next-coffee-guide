@@ -1,4 +1,4 @@
-export default function () {
+export default function Edit() {
   return (
     <div className="w-[828px] m-auto mt-[50px]">
       <h4 className="text-[25px] border-b-[1px] pb-[10px] text-[#081910]">
