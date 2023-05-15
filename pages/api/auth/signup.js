@@ -13,7 +13,7 @@ export default async function Signup(req, res) {
     let hash = await bcrypt.hash(req.body.password, 10);
     req.body.password = hash;
 
-    res.redirect("/login");
+    res.redirect(302, "/");
   } else {
     res.status(500).json({ result: false, error: "Route not valid" });
   }
