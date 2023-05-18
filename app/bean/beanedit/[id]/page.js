@@ -12,7 +12,7 @@ export default async function Edit(props) {
       <h4 className="text-[25px] border-b-[1px] pb-[10px] text-[#081910]">
         글 수정
       </h4>
-      <form action="/api/post/edit" method="POST">
+      <form action="/api/post/editb" method="POST">
         <input
           className="block px-[6px] py-[10px] mt-[20px] w-[828px] border-[1px] rounded-lg"
           name="title"
