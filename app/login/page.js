@@ -5,10 +5,11 @@ import LoginButton from "@/app/components/LoginButton";
 import LoginInput from "@/app/components/LoginInput";
 import LoginRegTitle from "@/app/components/LoginRegTitle";
 import NaverLogin from "@/app/login/NaverLogin";
+import Layout from "./layout";
 
 export default function Login() {
   return (
-    <>
+    <Layout>
       <LoginRegTitle>로그인</LoginRegTitle>
       <form className="flex flex-col gap-10 justify-center items-center mt-11">
         <LoginInput name="email" type="email" placeholder="이메일">
@@ -26,6 +27,6 @@ export default function Login() {
         <KakaoLogin />
         <NaverLogin />
       </div>
-    </>
+    </Layout>
   );
 }
