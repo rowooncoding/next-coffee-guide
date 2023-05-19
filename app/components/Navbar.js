@@ -12,7 +12,7 @@ export default function Navbar() {
       <Link className="p-[6px] hover:text-[#ABC4AA]" href="/cafe">
         <li>카페추천</li>
       </Link>
-      <Link className="p-[6px] hover:text-[#ABC4AA]" href="/">
+      <Link className="p-[6px] hover:text-[#ABC4AA]" href="/bean">
         <li>원두추천</li>
       </Link>
     </ul>
