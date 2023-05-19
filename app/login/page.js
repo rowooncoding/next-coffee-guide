@@ -6,8 +6,22 @@ import LoginInput from "@/app/components/LoginInput";
 import LoginRegTitle from "@/app/components/LoginRegTitle";
 import NaverLogin from "@/app/login/NaverLogin";
 import Layout from "./layout";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { getSession } from "next-auth/react";
 
 export default function Login() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if user is already logged in
+    getSession().then((session) => {
+      if (session) {
+        router.push("/");
+      }
+    });
+  }, [router]);
+
   return (
     <Layout>
       <LoginRegTitle>로그인</LoginRegTitle>
