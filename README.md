@@ -50,7 +50,7 @@
 
 - 로그인
 ![로그인](https://github.com/rowooncoding/next-coffee-guide/assets/114975279/fb990c8f-d3e6-4b6c-ba55-0b09412ad6f4)
-현재 소셜로그인이 되지 않는 오류로 인하여 수정중입니다.
+로그인 후 메인페이지로 넘어가도록 작업예정
 
 - 회원가입
 ![회원가입](https://github.com/rowooncoding/next-coffee-guide/assets/114975279/d2cf3452-719a-42e3-853f-58d567f3f4e9)
