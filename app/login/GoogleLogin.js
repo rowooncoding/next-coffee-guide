@@ -3,11 +3,14 @@
 import { signIn } from "next-auth/react";
 
 export default function GoogleLogin() {
+  const socialLogin = (e, provider) => {
+    e.preventDefault();
+    signIn(provider);
+  };
+
   return (
     <button
-      onClick={() => {
-        signIn("google");
-      }}
+      onClick={(e) => socialLogin(e, "google")}
       type="submit"
       name="social"
       className="border w-80 h-12 rounded-full flex justify-center items-center border-[#0C2340] text-[#0C2340]"
