@@ -5,6 +5,7 @@ import Centercoffeeimg from "/public/센터커피.svg";
 import Centercoffeeimg2 from "/public/센터커피2.svg";
 import Pastellcoffeeimg from "/public/파스텔.svg";
 import BeanbrothersCoffeeimg from "/public/빈브라더스.svg";
+import Link from "next/link";
 
 export default function MainImages() {
   let images = [
@@ -12,7 +13,7 @@ export default function MainImages() {
       className:
         "w-[100%] h-[100%] object-cover lg:hover:scale-110 transition-transform ease-in-out duration-500 cursor-pointer",
       src: Rullcoffeeimg,
-      link: "/",
+      link: "/rull1",
       alt: "룰커피 레시피 링크 이미지",
       key: "rull",
       title: "40 80 40 레시피",
@@ -75,18 +76,20 @@ export default function MainImages() {
       {images.map((list) => {
         return (
           <GuideDetail>
-            <Image
-              className={list.className}
-              src={list.src}
-              alt={list.alt}
-              key={list.key}
-            />
-            <div className="text-2xl mt-[20px] text-[#675D50]">
-              {list.title}
-            </div>
-            <div className="mt-[10px] text-base text-[#A99072]">
-              {list.content}
-            </div>
+            <Link href={list.link}>
+              <Image
+                className={list.className}
+                src={list.src}
+                alt={list.alt}
+                key={list.key}
+              />
+              <div className="text-2xl mt-[20px] text-[#675D50]">
+                {list.title}
+              </div>
+              <div className="mt-[10px] text-base text-[#A99072]">
+                {list.content}
+              </div>
+            </Link>
           </GuideDetail>
         );
       })}
