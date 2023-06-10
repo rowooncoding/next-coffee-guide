@@ -13,7 +13,7 @@ const firebaseConfig = {
   projectId: "next-coffee-guide-ec085",
   storageBucket: "next-coffee-guide-ec085.appspot.com",
   messagingSenderId: "279505906773",
-  appId: "1:279505906773:web:6b6bdc8c813e07980ff8dc",
+  appId: "1:279505906773:web:17907c9af3d717e20ff8dc",
 };
 
 if (!firebase.apps.length) {
