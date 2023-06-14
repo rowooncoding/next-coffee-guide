@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { dbService as db } from "../firebase";
 
-export default function MainImages() {
+const ImagePage = () => {
   const itemsCollectionRef = collection(db, "post");
   const [items, setItems] = useState([]);
 
@@ -35,6 +35,7 @@ export default function MainImages() {
                 src={list.src}
                 alt={list.alt}
                 key={list.key}
+                width="100%"
               />
               <div className="text-2xl mt-[20px] text-[#675D50]">
                 {list.title}
@@ -50,4 +51,6 @@ export default function MainImages() {
       )}
     </>
   );
-}
+};
+
+export default ImagePage;
